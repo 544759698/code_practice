@@ -29,7 +29,7 @@ api-docs.json
 **/target/
 !.mvn/wrapper/maven-wrapper.jar
 
-### STS ###
+# STS
 .apt_generated
 .classpath
 .factorypath
@@ -38,13 +38,13 @@ api-docs.json
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
+# IntelliJ IDEA
 .idea
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /build/
 /nbbuild/
@@ -53,10 +53,8 @@ api-docs.json
 /.nb-gradle/
 
 
-### logs ###
+# logs
 **/logs/
 **/ilogFailedLogs/
 **/ilogMetricLogs/
 **/log/
-
-*.DS_Store
