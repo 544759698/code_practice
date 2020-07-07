@@ -1,31 +1,42 @@
-# STS
-.apt_generated
-.classpath
-.factorypath
+# maven ignore
+build/
+
+out/
+
+# eclipse ignore
+.settings/
 .project
-.settings
-.springBeans
-.sts4-cache
+.classpath
 
-# IntelliJ IDEA
-.idea
-*.iws
-*.iml
+# idea ignore
+.idea/
 *.ipr
+*.iml
+*.iws
+# gradle ignore
+.gradle/
 
-# NetBeans
-/nbproject/private/
-/build/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+*.java~
+*.properties~
+*.xml~
+*.lock
+*.registry.properties
 
+# system ignore
+.DS_Store
+Thumbs.db
 
-# logs
-**/logs/
-**/ilogFailedLogs/
-**/ilogMetricLogs/
-**/log/
-
-*.DS_Store
+# review board config
+.reviewboardrc
+*.class
+*.war
+*.original
+*.jar
+target/maven-archiver/pom.properties
+*.lst
