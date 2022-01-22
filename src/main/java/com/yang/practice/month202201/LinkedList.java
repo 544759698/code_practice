@@ -36,4 +36,20 @@ public class LinkedList {
         return slow;
     }
 
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode beforeN = new ListNode(-1);
+        ListNode dumpy = beforeN;
+        beforeN.next = head;
+        int i = 0;
+        while (head != null) {
+            i++;
+            if (i > n) {
+                beforeN = beforeN.next;
+            }
+            head = head.next;
+        }
+        beforeN.next = beforeN.next.next;
+        return dumpy.next;
+    }
+
 }
