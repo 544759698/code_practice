@@ -6,14 +6,14 @@ package com.yang.practice.month202201;
  */
 public class ReverseList {
 
-    public Node reverseList(Node node) {
-        if (node == null || node.next == null) {
-            return node;
+    public ListNode reverseList(ListNode listNode) {
+        if (listNode == null || listNode.next == null) {
+            return listNode;
         }
-        Node pre = null;
-        Node curr = node;
+        ListNode pre = null;
+        ListNode curr = listNode;
         while (curr != null) {
-            Node tmp = curr.next;
+            ListNode tmp = curr.next;
             curr.next = pre;
             pre = curr;
             curr = tmp;
@@ -22,17 +22,17 @@ public class ReverseList {
     }
 
     public static void main(String[] args) {
-        Node node1 = new Node(1);
-        Node node2 = new Node(2);
-        Node node3 = new Node(3);
-        Node node4 = new Node(4);
-        Node node5 = new Node(5);
-        node1.next = node2;
-        node2.next = node3;
-        node3.next = node4;
-        node4.next = node5;
+        ListNode listNode1 = new ListNode(1);
+        ListNode listNode2 = new ListNode(2);
+        ListNode listNode3 = new ListNode(3);
+        ListNode listNode4 = new ListNode(4);
+        ListNode listNode5 = new ListNode(5);
+        listNode1.next = listNode2;
+        listNode2.next = listNode3;
+        listNode3.next = listNode4;
+        listNode4.next = listNode5;
         ReverseList r = new ReverseList();
-        Node newHead = r.reverseList(node1);
+        ListNode newHead = r.reverseList(listNode1);
         while (newHead != null) {
             System.out.println(newHead.val);
             newHead = newHead.next;
@@ -41,11 +41,12 @@ public class ReverseList {
 
 }
 
-class Node {
+class ListNode {
     int val;
-    Node next;
+    ListNode next;
 
-    public Node(int val) {
-        this.val = val;
+    ListNode(int x) {
+        val = x;
+        next = null;
     }
 }
