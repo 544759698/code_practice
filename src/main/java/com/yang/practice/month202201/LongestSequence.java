@@ -15,6 +15,7 @@ public class LongestSequence {
         dp[0] = 1;
         int max = 1;
         for (int i = 1; i < nums.length; i++) {
+            // 初始值为1，表示当前选中
             dp[i] = 1;
             for (int j = 0; j < i; j++) {
                 if (nums[i] > nums[j]) {
