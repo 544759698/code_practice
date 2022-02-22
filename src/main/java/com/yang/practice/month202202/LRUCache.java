@@ -21,16 +21,18 @@ public class LRUCache {
     }
 
     public int get(int key) {
-        if (map.containsKey(key)) {
+        Integer ret = map.get(key);
+        if (ret != null) {
             queue.remove(key);
             queue.add(key);
-            return map.get(key);
+            return ret;
         }
         return -1;
     }
 
     public void put(int key, int value) {
-        if (queue.contains(key)) {
+        Integer ret = map.get(key);
+        if (ret != null) {
             queue.remove(key);
             map.remove(key);
         } else if (queue.size() >= capacity) {
