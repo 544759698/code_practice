@@ -1,4 +1,4 @@
-package com.yang.practice.thread20200727.forkjoin;
+package com.yang.practice.algorithm20200719;
 
 import java.util.ArrayList;
 import java.util.concurrent.ForkJoinPool;
