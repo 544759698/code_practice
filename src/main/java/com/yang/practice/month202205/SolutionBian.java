@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
  * @Author: yangguojun01
  * @Date: 2022/5/26
  */
-public class Solution1 {
+public class SolutionBian {
     public static void main(String[] args) {
         List<DataItem> inputList = new ArrayList<>();
         inputList.add(new DataItem("20220501", 32, 50));
