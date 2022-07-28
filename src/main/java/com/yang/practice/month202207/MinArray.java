@@ -20,4 +20,9 @@ public class MinArray {
         }
         return numbers[low];
     }
+
+    public static void main(String[] args) {
+        MinArray m = new MinArray();
+        System.out.println(m.minArray(new int[]{1,2}));
+    }
 }
