@@ -17,9 +17,6 @@ public class CollectionTest {
     public static void main(String[] args) {
         List<String> list = Lists.newArrayList("aa", "bb", "cc");
         System.out.println(Joiner.on(",").join(list));
-        // Exception
-        //        list = null;
-        //        System.out.println(Joiner.on(",").join(list));
         Map<String, Integer> map = Maps.newHashMap();
         map.put("xiaoming", 12);
         map.put("xiaohong", 13);
