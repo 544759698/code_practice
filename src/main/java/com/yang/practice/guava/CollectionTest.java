@@ -25,6 +25,7 @@ public class CollectionTest {
         String str = "1-2-3";
         List<String> strlist = Splitter.on('-').splitToList(str);
         System.out.println(strlist);
+        System.out.println(str.substring(0, str.length()));
     }
 
 }
